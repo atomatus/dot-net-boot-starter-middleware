@@ -4,7 +4,7 @@
 
 [![NuGet version (Com.Atomatus.BootStarter)](https://img.shields.io/nuget/v/Com.Atomatus.BootStarter.Middlewares.svg?style=flat-square)](https://www.nuget.org/packages/Com.Atomatus.BootStarter.Middlewares/)
 
-The Com.Atomatus.Bootstarter.Middlewares library is an innovative solution developed by Atomatus to simplify and streamline the process of creating and implementing middlewares in projects based on the Bootstarter framework.
+The `Com.Atomatus.Bootstarter.Middlewares` library is an innovative solution developed by Atomatus to simplify and streamline the process of creating and implementing middlewares in projects based on the Bootstarter framework.
 
 # Middleware Usage Guide
 
