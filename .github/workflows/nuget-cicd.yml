@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: '6.0.x'
+          dotnet-quality: 'preview'
           
       # region Bootstarter Middlewares
       - name: 'Restore Bootstarter.Middlewares'
@@ -41,5 +42,6 @@ jobs:
           VERSION_REGEX: '^\s*<PackageVersion>(.*)</PackageVersion>\s*$'
           TAG_FORMAT: '*'
           NUGET_KEY: ${{ secrets.NUGET_COM_ATOMATUS_AUTH_KEY }}
+          TAG_COMMIT: false
           INCLUDE_SYMBOLS: true
       # endregion 

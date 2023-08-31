@@ -11,7 +11,7 @@
     <Company>Atomatus</Company>    
     <Copyright>®2020-2023 Atomatus - All rights reserved</Copyright>
     <Description>Sytem library for multiplatforms to boot starter middlewares in asp.net core projects.</Description>
-    <PackageId>Com.Atomatus.BootStarter</PackageId>
+    <PackageId>Com.Atomatus.BootStarter.Middlewares</PackageId>
     <PackageTags>ef boot starter middlewares</PackageTags>
     <PackageVersion>0.0.1</PackageVersion>
     <PackageIcon>logo.png</PackageIcon>
