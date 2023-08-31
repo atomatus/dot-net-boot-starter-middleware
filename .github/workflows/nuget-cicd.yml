@@ -24,7 +24,7 @@ jobs:
         with:
           dotnet-version: '6.0.x'
           
-      # region Bootstarter Web
+      # region Bootstarter Middlewares
       - name: 'Restore Bootstarter.Middlewares'
         if: ${{ success() }}
         run: dotnet restore ${{ env.PROJ_BS_PATH }}
@@ -33,7 +33,7 @@ jobs:
         if: ${{ success() }}
         run: dotnet build ${{ env.PROJ_BS_PATH }} --no-restore --configuration Release
       
-      - name: Publish Bootstarter.Web to NuGet
+      - name: Publish Bootstarter.Middlewares to NuGet
         if: ${{ success() }}
         uses: alirezanet/publish-nuget@v3.1.0
         with:

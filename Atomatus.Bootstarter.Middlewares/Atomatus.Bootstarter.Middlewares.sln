@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Atomatus.Bootstarter.Middlewares", "Com.Atomatus.Bootstarter.Middlewares\Com.Atomatus.Bootstarter.Middlewares.csproj", "{D3CA0944-B687-4E8D-872D-36CDCF8FCAA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C0281E42-1AFB-4A59-AF03-A0CFD8DEEE0A}"
+	ProjectSection(SolutionItems) = preProject
+		..\privatekey.snk = ..\privatekey.snk
+		..\public.snk = ..\public.snk
+		..\.github\workflows\nuget-cicd.yml = ..\.github\workflows\nuget-cicd.yml
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3CA0944-B687-4E8D-872D-36CDCF8FCAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CA0944-B687-4E8D-872D-36CDCF8FCAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CA0944-B687-4E8D-872D-36CDCF8FCAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CA0944-B687-4E8D-872D-36CDCF8FCAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C589DA0D-6076-4749-BFF3-E460569B31ED}
+	EndGlobalSection
+EndGlobal

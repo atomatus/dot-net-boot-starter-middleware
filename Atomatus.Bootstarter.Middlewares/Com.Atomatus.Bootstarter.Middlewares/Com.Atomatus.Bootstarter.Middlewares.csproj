@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <Authors>Atomatus</Authors>
+    <Company>Atomatus</Company>    
+    <Copyright>®2020-2023 Atomatus - All rights reserved</Copyright>
+    <Description>Sytem library for multiplatforms to boot starter middlewares in asp.net core projects.</Description>
+    <PackageId>Com.Atomatus.BootStarter</PackageId>
+    <PackageTags>ef boot starter middlewares</PackageTags>
+    <PackageVersion>0.0.1</PackageVersion>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>    
+    <PackageProjectUrl>https://github.com/atomatus/dot-net-boot-starter-middleware</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/atomatus/dot-net-boot-starter-middleware</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\privatekey.snk</AssemblyOriginatorKeyFile>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Middleware.cs">
+        <DependentUpon>IMiddleware.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Middleware.S1.cs">
+        <DependentUpon>Middleware.cs</DependentUpon>
+    </Compile>
+      
+    <Compile Update="Middleware.S2.cs">
+        <DependentUpon>Middleware.cs</DependentUpon>
+    </Compile>
+      
+    <Compile Update="Middleware.S3.cs">
+        <DependentUpon>Middleware.cs</DependentUpon>
+    </Compile>
+      
+    <Compile Update="Middleware.S4.cs">
+        <DependentUpon>Middleware.cs</DependentUpon>
+    </Compile>
+      
+    <Compile Update="Middleware.S5.cs">
+        <DependentUpon>Middleware.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Middleware.OneTime.cs">
+        <DependentUpon>IMiddleware.cs</DependentUpon>
+    </Compile>
+
+    <Compile Update="Middleware.OneTime.S1.cs">
+        <DependentUpon>Middleware.OneTime.cs</DependentUpon>
+    </Compile>
+
+    <Compile Update="Middleware.OneTime.S2.cs">
+        <DependentUpon>Middleware.OneTime.cs</DependentUpon>
+    </Compile>
+
+    <Compile Update="Middleware.OneTime.S3.cs">
+        <DependentUpon>Middleware.OneTime.cs</DependentUpon>
+    </Compile>
+
+    <Compile Update="Middleware.OneTime.S4.cs">
+        <DependentUpon>Middleware.OneTime.cs</DependentUpon>
+    </Compile>
+
+    <Compile Update="Middleware.OneTime.S5.cs">
+        <DependentUpon>Middleware.OneTime.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+</Project>
