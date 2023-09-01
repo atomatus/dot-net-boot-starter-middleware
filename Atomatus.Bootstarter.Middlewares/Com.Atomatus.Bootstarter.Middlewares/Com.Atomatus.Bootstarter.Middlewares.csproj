@@ -10,7 +10,7 @@
     <Authors>Atomatus</Authors>
     <Company>Atomatus</Company>    
     <Copyright>®2020-2023 Atomatus - All rights reserved</Copyright>
-    <Description>Sytem library for multiplatforms to boot starter middlewares in asp.net core projects.</Description>
+    <Description>Sytem library for multiplatforms to boot starter middlewares in asp.net core projects. Middlewares provide a powerful mechanism to customize and extend the behavior of your application's request-response pipeline. By utilizing different Middleware types, you can efficiently integrate various functionalities and services into your application without tightly coupling them.</Description>
     <PackageId>Com.Atomatus.BootStarter.Middlewares</PackageId>
     <PackageTags>ef boot starter middlewares</PackageTags>
     <PackageVersion>0.0.1</PackageVersion>
